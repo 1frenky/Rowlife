@@ -1,0 +1,32 @@
+﻿<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Maandag</th>
+            <th scope="col">Dinsdag</th>
+            <th scope="col">Woensdag</th>
+            <th scope="col">Donderdag</th>
+            <th scope="col">Vrijdag</th>
+            <th scope="col">Zaterdag</th>
+            <th scope="col">Zondag</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            for (int i = 8; i < 21; i++)
+            {
+                int ii = i + 1;
+        <tr>
+            <th scope="row">@i:00-@ii:00</th>
+            <td>ja nee miss</td>
+            <td>ja nee miss</td>
+            <td>ja nee miss</td>
+            <td>ja nee miss</td>
+            <td>ja nee miss</td>
+            <td>ja nee miss</td>
+            <td>ja nee miss</td>
+        </tr>
+            }
+        }
+    </tbody>
+</table>
