@@ -1,7 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Planner";
 
-
     List<DateTime>
     tijd = new List<DateTime>
         ();
@@ -16,6 +15,8 @@
     }
 
     <h2>@ViewData["Title"]</h2>
+
+    <iframe src="https://calendar.google.com/calendar/embed?src=1l15kvnbp9l792cmg24erk1neg%40group.calendar.google.com&ctz=Europe%2FAmsterdam" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
     @foreach (DateTime dag in tijd)
     {
